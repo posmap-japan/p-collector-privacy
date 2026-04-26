@@ -1,6 +1,6 @@
 # P-Collector プライバシーポリシー
 
-最終更新日：2026年4月23日
+最終更新日：2026年4月26日
 
 本プライバシーポリシー（以下「本ポリシー」）は、P-Collector（以下「本アプリ」）の開発・運営者（以下「運営者」）が、本アプリの利用者（以下「ユーザー」）から取得する情報の取り扱いについて定めるものです。本アプリをインストールまたは利用した時点で、本ポリシーに同意したものとみなします。
 
@@ -55,9 +55,10 @@
 
 | サービス | 用途 | プライバシーポリシー |
 |---------|------|---------------------|
-| Google Firebase（Authentication, Cloud Firestore, Cloud Storage, Analytics） | 認証・データ保管・カードデータベース更新・分析 | [Firebase プライバシー](https://firebase.google.com/support/privacy) |
+| Google Firebase（Authentication, Cloud Firestore, Analytics） | 認証・データ保管・分析 | [Firebase プライバシー](https://firebase.google.com/support/privacy) |
 | Google Sign-In | ログイン認証 | [Google プライバシーポリシー](https://policies.google.com/privacy) |
 | Apple Sign In | ログイン認証 | [Apple プライバシーポリシー](https://www.apple.com/legal/privacy/) |
+| jsDelivr（`cdn.jsdelivr.net`） | 運営者が管理する公開 GitHub リポジトリ [`posmap-japan/p-collector-card-db`](https://github.com/posmap-japan/p-collector-card-db) にホストされた、カードのメタデータ（カード名・セット名・番号等）と manifest ファイルの差分配信。アプリは小さな manifest を取得して、より新しいバージョンが存在する場合のみ JSON 本体をダウンロードします。送信される情報は HTTP リクエスト（URL／User-Agent／IP アドレス）のみで、ユーザーが入力したコレクションデータや個人情報は送信されません。 | [jsDelivr プライバシーポリシー](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net) |
 | TCGdex（`assets.tcgdex.net`） | 英語・日本語等のカード画像表示用公開 CDN の参照。英語カードのメタデータ（カード名・セット名・番号等）は [tcgdex/cards-database](https://github.com/tcgdex/cards-database)（MIT License）を **ビルド時のみ** 取り込んでアプリ内データベースに同梱しており、アプリ実行時に `api.tcgdex.net` へリクエストが送信されることはありません。 | [TCGdex](https://tcgdex.dev/)（ユーザーの個人情報は送信されません） |
 | TCGplayer 公開画像 CDN（`tcgplayer-cdn.tcgplayer.com`） | TCGdex に画像が存在しない日本語カード画像の表示（画像ファイルの参照のみ） | [TCGplayer プライバシーポリシー](https://www.tcgplayer.com/privacy/)（アプリ実行時はユーザー端末から同 CDN へ画像取得リクエストが送信されます。カード画像の取得以外の個人情報は送信されません） |
 | Pokémon TCG API（`api.pokemontcg.io` / `images.pokemontcg.io`） | 市場価格（参考情報）の取得、バンドルデータベースに未収録の英語カードの検索・画像参照（フォールバック用途） | 公開 API（ユーザーが入力した検索文字列等が送信されます。個人情報は送信されません） |
