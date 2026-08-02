@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>利用規約 — P-Collector</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", sans-serif;
+      line-height: 1.65;
+      max-width: 40rem;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+    }
+    h1 { font-size: 1.35rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    a { color: inherit; }
+    .muted { opacity: 0.85; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← トップ</a></p>
+  <h1>P-Collector 利用規約</h1>
+  <p class="muted">最終更新日：2026年8月2日</p>
+
+  <p>本規約は、モバイルアプリ「P-Collector」（以下「本アプリ」）の利用条件を定めます。本アプリを利用した時点で、本規約に同意したものとみなします。詳細版は <a href="terms-of-service.html">こちら</a> をご覧ください。</p>
+
+  <h2>1. 利用許諾</h2>
+  <p>開発者は、利用者に対し、本規約の範囲内で本アプリを非独占的に利用する権限を付与します。</p>
+
+  <h2>2. 本アプリの概要・データソース</h2>
+  <p>本アプリは、コレクション管理、セット進捗（コンプリート）、コレクタースコアランキング、カード掲示板、市場参考価格の表示などを提供します。売買の仲介は行いません。価格・スコアは参考情報です。</p>
+  <p>英語版カード情報（メタデータおよび画像 URL）は、オープンデータセット <strong>TCGdex</strong>（<a href="https://github.com/tcgdex/cards-database">tcgdex/cards-database</a>、MIT License）を <strong>ビルド時に取り込み</strong>、アプリ内にバンドルされた検索用データベースとして提供します。アプリ実行時に <code>api.tcgdex.net</code> へリクエストを送信することはありません。日本語版のカード名等のメタデータも、アプリ内にバンドルされた検索用データベース（事実情報および TCGdex 由来のデータ）から取得します。新弾追加等の更新は、運営者が管理する公開 GitHub リポジトリ <a href="https://github.com/posmap-japan/p-collector-card-db">posmap-japan/p-collector-card-db</a>（MIT License）に配置し、無料の公開 CDN である <strong>jsDelivr</strong>（<code>cdn.jsdelivr.net</code>）経由でアプリへ差分配信されます（メタデータのみ）。新弾反映後はセット進捗およびコレクタースコアの算出対象にも含まれます。カード画像は TCGdex 公開 CDN（<code>assets.tcgdex.net</code>、MIT License）、TCGplayer の公開画像 CDN（<code>tcgplayer-cdn.tcgplayer.com</code>）、および Pokémon TCG API（<code>images.pokemontcg.io</code>、フォールバック用途）にホストされた URL を通じて参照表示しており、運営者は画像を再配布していません。TCGplayer CDN の画像 URL インデックスは、運営者が <strong>PokemonPriceTracker API</strong> を <strong>ビルド時のみ</strong>（有料プランの利用規約に従って）利用し取得したもので、アプリ実行時に同 API を呼び出すことはありません。市場参考価格およびバンドルデータベースに未収録の英語カード検索には、Pokémon TCG API（<code>api.pokemontcg.io</code>）と楽天市場 API（日本語設定時）を実行時に補助的に利用します。外部マーケットへの遷移 URL にアフィリエイト用パラメータが付与される場合があります。本アプリは、株式会社ポケモンが運営する <code>pokemon-card.com</code> に対する自動化アクセスや、同サイトにホストされた画像へのホットリンクを行いません。</p>
+
+  <h2>3. 公開ランキング・掲示板</h2>
+  <p>ログイン時、表示名・写真・コレクタースコア等が他のユーザーに表示されることがあります。掲示板への投稿は公開されます。誹謗中傷・スパム・権利侵害等の投稿は禁止し、運営者は違反コンテンツを削除できます。スコア配点は予告なく変更されることがあります。</p>
+
+  <h2>4. 非公式表示・知的財産権</h2>
+  <p>「ポケモン」「Pokémon」は株式会社ポケモン等の商標・登録商標です。ポケモンカードゲームに関する著作権・商標等の権利は同社および関連権利者に帰属し、本アプリはこれらの企業に承認・提携されたものではありません。本アプリは非公式のファンメイドツールです。</p>
+
+  <h2>5. 削除依頼窓口</h2>
+  <p>権利者または正当な権利主張者からの削除・是正要請を受けた場合は、速やかに対応します。<a href="mailto:posmap.japan@gmail.com">posmap.japan@gmail.com</a> までご連絡ください。</p>
+
+  <h2>6. 禁止事項</h2>
+  <p>法令違反、他者の権利侵害、本アプリや関連サービスの不正利用、過度な負荷を与える行為、掲示板での迷惑行為、不正なスコア操作等を禁止します。</p>
+
+  <h2>7. 免責</h2>
+  <p>本アプリは現状有姿で提供されます。表示されるカード情報・価格・スコア等は参考であり、正確性・完全性を保証しません。本アプリは外部 API および公開 CDN（TCGdex、TCGplayer 画像 CDN、Pokémon TCG API、楽天市場 API、jsDelivr 等）に依存しており、これらのサービスの停止・変更により一部機能が利用できなくなる場合があります。利用により生じた損害について、開発者に故意または重過失がある場合を除き責任を負いません。</p>
+
+  <h2>8. 広告・アフィリエイト</h2>
+  <p>現時点ではアプリ内課金および第三者広告 SDK による広告表示はありません。外部サイトへのアフィリエイトリンクを含む場合があります。</p>
+
+  <h2>9. 規約の変更</h2>
+  <p>開発者は必要に応じて本規約を変更できます。重要な変更がある場合は、アプリ内または本サイトでの表示等により周知するよう努めます。</p>
+
+  <h2>10. 準拠法</h2>
+  <p>本規約は日本法を準拠法とします。</p>
+
+  <p class="muted"><a href="privacy-policy.html">プライバシーポリシー</a></p>
+</body>
+</html>
